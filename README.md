@@ -16,9 +16,12 @@
 
 
 ### 實作
-1 線路將按鈕連接到另一個 GND 引腳和 GPIO 引腳 2，如下所示：
+**1 線路將按鈕連接到另一個 GND 引腳和 GPIO 引腳 2，如下所示：**
+
 ![image](https://hackmd.io/_uploads/By2HCzHBJg.png)
-2.Webcam 接USB Port:
+
+**2.Webcam 接USB Port:**
+
 ![image](https://hackmd.io/_uploads/B1NzxXSHkg.png)
 
 ## Pi WebCam 功能
