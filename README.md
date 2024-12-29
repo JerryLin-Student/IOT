@@ -25,7 +25,24 @@
 ![image](https://hackmd.io/_uploads/B1NzxXSHkg.png)
 
 **3.軟體安裝:**
-
+### 使用 Python3
+### 安裝 OpenCV
+### 安裝 Flask
+```
+pip install Flask
+```
+### 安裝 pygame
+```
+python3 -m pip install -U pygame --user
+```
+### 安裝模型框架Tensorflow Lite
+```
+pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+```
+### 更新及升級所有套件包
+```
+sudo apt-get update && sudo apt-get upgrade
+```
 **4.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
 
 ![image](https://hackmd.io/_uploads/rJd1vNRByg.png)
@@ -138,3 +155,9 @@ hours：可存放時效，單位為小時（必填）。
 Ovie Smarterware 
 美國產品募資平台 Kickstarter 分享，「Smarterware 是全世界第一個智能食物保存系統，簡單好用」
 https://ovie.life/?srsltid=AfmBOoraansfYuHKejlNGUS7bWFAOUKTPi9A6KIEJRSsn3acY-TyQZj7
+
+**Flask** https://pypi.org/project/Flask/
+
+**Pygame** https://www.pygame.org/wiki/GettingStarted
+
+**使用Google Teachable Machine 來實現Raspberry Pi 4 的影像分類推論** https://blog.cavedu.com/2020/11/26/google-teachable-machine-raspberry-pi-4/
