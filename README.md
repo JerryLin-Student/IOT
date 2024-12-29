@@ -24,7 +24,20 @@
 
 ![image](https://hackmd.io/_uploads/B1NzxXSHkg.png)
 
-**3 :**
+**3.軟體安裝:**
+
+**4.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
+
+![image](https://hackmd.io/_uploads/rJd1vNRByg.png)
+
+**5.取出物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):** 
+
+![image](https://hackmd.io/_uploads/Hk5zv40rJg.png)
+
+**6.Line Notify:**
+
+![image](https://hackmd.io/_uploads/Syz1YVRB1e.png)
+
 
 ## Dependencies
 
