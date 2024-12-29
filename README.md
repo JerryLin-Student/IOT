@@ -15,18 +15,51 @@
 ![image](https://hackmd.io/_uploads/SyylCQSHJl.png)
 
 
-## 實作
-**1 線路將按鈕連接到另一個 GND 引腳和 GPIO 引腳 2，如下所示：**
+# 實作
+## **1 線路將按鈕連接到另一個 GND 引腳和 GPIO 引腳 2，如下所示：**
 
 ![image](https://hackmd.io/_uploads/By2HCzHBJg.png)
 
-**2.Webcam 接 USB Port:**
+## **2.Webcam 接 USB Port:**
 
 ![image](https://hackmd.io/_uploads/B1NzxXSHkg.png)
 
-**3.軟體安裝:**
+## **3.軟體安裝:**
 ### 使用 Python3
+```
+python3
+```
 ### 安裝 OpenCV
+back to root
+```
+cd ~/
+```
+install packages
+```
+sudo apt install git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libatlas-base-dev python3-scipy
+```
+download opencv
+```
+git clone --depth 1 --branch 4.5.2-openvino https://github.com/opencv/opencv.git
+```
+go to opencv && create new file && go to new file
+```
+cd opencv && mkdir build && cd build
+```
+```
+cmake –DCMAKE_BUILD_TYPE=Release –DCMAKE_INSTALL_PREFIX=/usr/local ..
+```
+Take a really long time
+```
+make -j4
+```
+Success:
+![](https://hackmd.io/_uploads/BJluqWHGMT.png)
+```
+sudo make install
+```
+Success:
+![](https://hackmd.io/_uploads/B1LnWHzMp.png)
 ### 安裝 Flask
 ```
 pip install Flask
@@ -43,15 +76,15 @@ pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-**4.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
+## **4.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
 
 ![image](https://hackmd.io/_uploads/rJd1vNRByg.png)
 
-**5.取出物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):** 
+## **5.取出物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):** 
 
 ![image](https://hackmd.io/_uploads/Hk5zv40rJg.png)
 
-**6.Line Notify:**
+## **6.Line Notify:**
 
 ![image](https://hackmd.io/_uploads/Syz1YVRB1e.png)
 
