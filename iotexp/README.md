@@ -1,18 +1,18 @@
 # 程式說明 (WebCam.py)
 ## 介紹
-與 API 操作相關
-1.get_unclaimed_items() 從 API 獲取未領取的物品列表。
-2.update_item(index) 更新指定物品的領取時間。
-3.auto_update_items()自動處理所有未領取的物品。
-與檔案操作相關
-4.initialize_json_file() 初始化 JSON 文件，如果文件不存在則創建新文件。
-5.log_to_json(item, timestamp) 將檢測結果記錄到 JSON 文件中。
-影像分類與模型相關
-6.load_labels(path) 載入模型標籤。
-7.set_input_tensor(interpreter, image) 設定影像數據到模型的輸入張量。
-8.classify_image(interpreter, image, top_k=1)  使用模型對影像進行分類，返回分類結果。
-相機操作相關
-9.record_and_classify() 開始錄影，進行即時分類並顯示結果。
+### 與 API 操作相關
+* 1.get_unclaimed_items() 從 API 獲取未領取的物品列表。
+* 2.update_item(index) 更新指定物品的領取時間。
+* 3.auto_update_items()自動處理所有未領取的物品。
+### 與檔案操作相關
+* 4.initialize_json_file() 初始化 JSON 文件，如果文件不存在則創建新文件。
+* 5.log_to_json(item, timestamp) 將檢測結果記錄到 JSON 文件中。
+### 影像分類與模型相關
+* 6.load_labels(path) 載入模型標籤。
+* 7.set_input_tensor(interpreter, image) 設定影像數據到模型的輸入張量。
+* 8.classify_image(interpreter, image, top_k=1)  使用模型對影像進行分類，返回分類結果。
+### 相機操作相關
+* 9.record_and_classify() 開始錄影，進行即時分類並顯示結果。
 
 # 程式說明 FlaskApp(Api.py)
 ## 介紹
