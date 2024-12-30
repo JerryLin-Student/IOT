@@ -84,6 +84,7 @@ sudo apt-get update && sudo apt-get upgrade
 /home/user/iotexp
 ```
 **如下:**
+
 ![image](https://hackmd.io/_uploads/r1Q5efeIJg.png)
 
 # 啟動程式
