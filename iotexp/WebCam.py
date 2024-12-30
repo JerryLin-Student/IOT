@@ -118,7 +118,7 @@ def classify_image(interpreter, image, top_k=1):
     return [(i, output[i]) for i in ordered[:top_k]]
 
 # 模型和標籤路徑
-data_folder = "/home/user/script/iotexp/model"
+data_folder = "/home/user/iotexp/model"
 model_path = f"{data_folder}/model.tflite"
 label_path = f"{data_folder}/labels.txt"
 before_itmes = None
