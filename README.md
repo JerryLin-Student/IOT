@@ -77,7 +77,7 @@ pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-
 sudo apt-get update && sudo apt-get upgrade
 ```
 # 程式說明
-
+請參考 [說明](https://github.com/JerryLin-Student/IOT/blob/main/iotexp/README.md) 連結。
 # 安裝程式
 ## 下載 iotexp 目錄, 並將目錄 copy user 下
 ```
