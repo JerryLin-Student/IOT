@@ -25,11 +25,11 @@
 ![image](https://hackmd.io/_uploads/B1NzxXSHkg.png)
 
 ## **3.軟體安裝:**
-### 使用 Python3
+### Step 1 : 使用 Python3
 ```
 python3
 ```
-### 安裝 OpenCV
+### Step 2 : 安裝 OpenCV
 back to root
 ```
 cd ~/
@@ -60,22 +60,32 @@ sudo make install
 ```
 Success:
 ![](https://hackmd.io/_uploads/B1LnWHzMp.png)
-### 安裝 Flask
+### Step 3 : 安裝 Flask
 ```
 pip install Flask
 ```
-### 安裝 pygame
+### Step 4 : 安裝 pygame
 ```
 python3 -m pip install -U pygame --user
 ```
-### 安裝模型框架Tensorflow Lite
+### Step 5 : 安裝模型框架Tensorflow Lite
 ```
 pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
 ```
-### 更新及升級所有套件包
+### Step 6 : 更新及升級所有套件包
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
+# 程式說明
+
+# 安裝程式
+## 下載 iotexp 目錄, 並將目錄 copy user 下
+```
+/home/user/iotexp
+```
+**如下:**
+![image](https://hackmd.io/_uploads/r1Q5efeIJg.png)
+
 # 啟動程式
 ## Step 1 : 編輯 Crontab (定時程式)
 ```
@@ -83,28 +93,29 @@ crontab -e
 ```
 這行代表每 1 小時執行一次腳本，具體含義：
 ```
-* 1 * * * /usr/bin/python3 /user/iotexp/myscript.py
+* 1 * * * /usr/bin/python3 /home/user/iotexp/myscript.py
 ```
 ## Step 2 : 啟動 Api.py (API程式)
 另開一個Terminal 
 ```
-/user/iotexp/Api.py
+python3 ./iotexp/Api.py
 ```
 ## Step 3 : 啟動 WebCam.py (Pi主程式)
+另開一個Terminal 
 ```
-/user/iotexp/Api.py
+python3 ./iotexp/WebCam.py
 ```
 
 # Demo
-## **4.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
+## **1.放入物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):**
 
 ![image](https://hackmd.io/_uploads/rJd1vNRByg.png)
 
-## **5.取出物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):** 
+## **2.取出物品 按下不放(模擬打開冰箱) 放開時(模擬關上冰箱):** 
 
 ![image](https://hackmd.io/_uploads/Hk5zv40rJg.png)
 
-## **6.Line Notify:**
+## **3.Line Notify:**
 
 ![image](https://hackmd.io/_uploads/Syz1YVRB1e.png)
 
@@ -122,10 +133,10 @@ https://ovie.life/?srsltid=AfmBOoraansfYuHKejlNGUS7bWFAOUKTPi9A6KIEJRSsn3acY-TyQ
 **使用Google Teachable Machine 來實現Raspberry Pi 4 的影像分類推論** https://blog.cavedu.com/2020/11/26/google-teachable-machine-raspberry-pi-4/
 
 ## 飲恨功能
-* 辨識食材 : 縮小範圍水果
-* 一次只能放一個水果
+* 原本要辨識食材 : 縮小範圍水果，另一個是模型的關係。
+* 一次只能放一個水果。
 ---
-可以再增加
-* 多台攝影機
+可以再增加多想想功能
+* 多台攝影機，多角度拍攝。避免水果遮住。
 * 辨識 (水果如是切好的?)
 * 監控如溫濕度感測器
