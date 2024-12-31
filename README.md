@@ -1,6 +1,6 @@
 # 專題名稱：Smart Food Saver (智慧食物守護者)                               
 ## 學號: 112453024 姓名: 林煜烽
-# 專題背景
+# Overview
 隨著現代人對健康和永續發展的重視，食物浪費和食材管理變得越來越重要。然而，許多人在家中經常忘記冰箱裡的食材或食品過期，導致浪費或安全隱患。
 
 ## 專題概念
@@ -9,13 +9,20 @@
 ## 功能
 食材辨識與追蹤。使用攝像頭和影像辨識技術自動記錄冰箱內放入或取出的食材。進一步追蹤食材的進出。**保鮮與過期提醒**
 
-# 架構
+# Key Features
+* Raspberry : 樹莓派 Raspberry Pi 4 B 開發板.
+* Flask : 是一個輕量級 WSGI Web 應用程式框架.
+* OpenCV : OpenCV-Python是基於Python的函式庫，旨在解決電腦視覺問題.
+* Line : LINE Notify 免費推播.
+
 ## 設計圖
 
 ![image](https://hackmd.io/_uploads/SyylCQSHJl.png)
 
+## 程式說明
+請參考 [說明](https://github.com/JerryLin-Student/IOT/blob/main/iotexp/README.md) 連結。
 
-# 實作
+# How to Use
 ## **1 線路將按鈕連接到另一個 GND 引腳和 GPIO 引腳 2，如下所示：**
 
 ![image](https://hackmd.io/_uploads/By2HCzHBJg.png)
@@ -76,8 +83,6 @@ pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-# 程式說明
-請參考 [說明](https://github.com/JerryLin-Student/IOT/blob/main/iotexp/README.md) 連結。
 # 安裝程式
 ## 下載 iotexp 目錄, 並將目錄 copy user 下
 ```
