@@ -125,7 +125,11 @@ python3 ./iotexp/WebCam.py
 
 ![image](https://hackmd.io/_uploads/Syz1YVRB1e.png)
 
-[![影片]({https://hackmd.io/_uploads/ryN52_mU1e.png})]({https://www.youtube.com/shorts/ZId32F6DD94?feature=share} "Link Title")
+## **4.影片:**
+
+![image](https://hackmd.io/_uploads/ryN52_mU1e.png)
+
+https://www.youtube.com/shorts/ZId32F6DD94?feature=share
 
 ## 參考
 Ovie Smarterware 
