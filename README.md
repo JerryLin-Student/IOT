@@ -121,7 +121,7 @@ python3 ./iotexp/WebCam.py
 
 ![image](https://hackmd.io/_uploads/Hk5zv40rJg.png)
 
-## **3.Line Notify:**
+## **3.Line Notify: (2025/03/31 Line Notify 結束服務)**
 
 ![image](https://hackmd.io/_uploads/Syz1YVRB1e.png)
 
